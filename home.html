@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Matrix App</title>
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.">
+  <!-- Icons and favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- <link rel="stylesheet" href="css/icomoon/style.css"> -->
+  <!-- STYLES CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+  <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- section header -->
+  <header>
+    <div class="container">
+      <div class="matrix">
+        <h1 class="matrix__title">MATRIX <span class="matrix__letter">PLAY</span></h1>
+        <button class="box-data__button box-data__button--start js-button-start">
+          START
+        </button>
+        <h2 class="matrix__letter">Instructions</h2> 
+        <p  class="matrix__text">
+          1 - In this game you must first insert the number of cells and the number of columns in which you must insert
+          whole numbers since it will not allow you to use letters.
+        </p>
+        <p class="matrix__text">
+          2 - Then when the cells appear, you must enter numbers that add up to the value of 100 in both their columns
+          and their rows.
+        </p>
+        <div class="matrix__instructions1" id="js-matrix__instructions1">
+          <h2 class="matrix__box1">Enter your number of rows </h2> <span class="matrix__value1" id="js-box1"></span>
+          <h2 class="matrix__box1">Enter your number of colums</h2> <span class="matrix__value2" id="js-box2"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //section main -->
+  <main>
+    <!-- section get deals -->
+    <section>
+      <div class="container">
+        <section class="box-data">
+          <h2 class="box-data__title">Enter your numbers for to play</h2>
+          <div class="auto-matrix" id="contenedor">
+          </div>
+          <button class="box-data__button" id="js-addRow">
+            Add matrix
+          </button>
+          <div class="box-data__group-buttons">
+            <button class="box-data__button box-data__button--reset" id="js-reset-play">
+              Reset Play
+            </button>
+            <button class=" box-data__button box-data__button--press-to-play" id="js-press-to-play">
+              Press to Play
+            </button>
+          </div>
+          <div class="box-data__player">
+            <button class="box-data__button box-data__button--player-win " id="js-player-win">You win!!</button>
+            <button class="box-data__button box-data__button--player-lost " id="js-player-lost">Hu- ooh!! You
+              lost</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Js-->
+  <script src="js/project.js"></script>
+</body>
+
+</html>

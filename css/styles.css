@@ -1,0 +1,171 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  max-width: 68.75rem;
+  width: 100%;
+  margin: 0 auto; }
+
+.matrix {
+  text-align: center; }
+  .matrix__box1 {
+    padding: 1rem; }
+  .matrix__value1 {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .matrix__value1-input {
+      border-radius: 30px;
+      background-color: #D9E2EF;
+      width: 77%;
+      border: 1px solid #335EEA;
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 1rem; }
+      .matrix__value1-input:focus {
+        border-radius: 30px;
+        outline: none; }
+      @media (min-width: 992px) {
+        .matrix__value1-input {
+          width: 30%; } }
+  .matrix__value2 {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .matrix__value2-input {
+      border-radius: 30px;
+      border: 1px solid #335EEA;
+      background-color: #D9E2EF;
+      width: 77%;
+      border: 1px solid #335EEA;
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 1rem; }
+      .matrix__value2-input:focus {
+        border-radius: 30px;
+        outline: none; }
+      @media (min-width: 992px) {
+        .matrix__value2-input {
+          width: 30%; } }
+  .matrix__instructions1 {
+    display: flex; }
+    @media (min-width: 992px) {
+      .matrix__instructions1 {
+        justify-content: space-between;
+        padding: 2rem;
+        justify-content: center; } }
+    @media (max-width: 992px) {
+      .matrix__instructions1 {
+        flex-direction: column; } }
+  .matrix__title {
+    color: #335EEA;
+    font-weight: 700; }
+  .matrix__text {
+    font-size: 14;
+    font-weight: 400;
+    padding: 2rem; }
+    @media (max-width: 576px) {
+      .matrix__text {
+        padding: 1rem; } }
+  .matrix__letter {
+    color: #f2c94c;
+    font-weight: 900; }
+
+.auto-matrix {
+  display: flex;
+  justify-content: center; }
+  .auto-matrix__col {
+    border-radius: 30px;
+    border: 1px solid #335EEA;
+    width: 40px;
+    height: 20px; }
+  .auto-matrix__input {
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    width: 40px; }
+    .auto-matrix__input:focus {
+      border-radius: 30px;
+      outline: none;
+      text-align: center; }
+
+.box-data {
+  display: flex;
+  flex-direction: column; }
+  .box-data__player {
+    flex-direction: column;
+    text-align: center;
+    display: flex; }
+  .box-data__group-buttons {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between; }
+  .box-data__button {
+    background-color: #335EEA;
+    padding: .5rem;
+    width: 6rem;
+    visibility: hidden;
+    margin: 0 auto;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 900;
+    -webkit-box-shadow: 2px 8px 13px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 8px 13px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 8px 13px -6px rgba(0, 0, 0, 0.75);
+    transition: all 1s ease; }
+    @media (min-width: 992px) {
+      .box-data__button {
+        width: 8rem; } }
+    @media (max-width: 992px) {
+      .box-data__button {
+        font-size: 0.75rem;
+        padding: .5rem;
+        width: 7rem;
+        margin-bottom: 2rem; } }
+    .box-data__button:hover {
+      -webkit-box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      -moz-box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      background-color: white;
+      border: 1px solid #335EEA;
+      color: #335EEA; }
+    .box-data__button--reset {
+      visibility: hidden;
+      background-color: #f2c94c; }
+      .box-data__button--reset:focus {
+        border-radius: 30px;
+        outline: none; }
+    .box-data__button--press-to-play {
+      visibility: hidden; }
+      .box-data__button--press-to-play:focus {
+        border-radius: 30px;
+        outline: none; }
+    .box-data__button--player-win {
+      visibility: hidden;
+      background-color: #4cc237;
+      transition: visibility .1s; }
+      .box-data__button--player-win:hover {
+        background-color: #4cc237;
+        border: none;
+        color: white; }
+    .box-data__button--player-lost {
+      visibility: hidden;
+      background-color: #df4759;
+      margin-top: -4.5rem;
+      width: 10rem;
+      transition: visibility .1s; }
+  .box-data__title {
+    text-align: center; }
+
+.box-data__button--start {
+  visibility: visible; }
+  .box-data__button--start:focus {
+    border-radius: 30px;
+    outline: none; }
+
+/*# sourceMappingURL=styles.css.map */

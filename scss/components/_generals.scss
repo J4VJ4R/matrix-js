@@ -1,0 +1,24 @@
+@mixin display($size) {
+  @if $size == small {
+    @media (max-width: 576px) { @content; }
+  }@else if $size == mobile {
+    @media (max-width: 992px) { @content; }
+  }@else if $size == tablet-small-down {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $size == tablet-medium-up {
+    @media (min-width: 992px) { @content; }
+  }
+}
+//functions
+@function rem($value: 2rem) {
+  @return ($value / 16 * 1rem);
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  max-width: rem(1100);
+  width: 100%;
+  margin: 0 auto;
+}

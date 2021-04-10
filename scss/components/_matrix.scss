@@ -1,0 +1,190 @@
+.matrix{
+  text-align: center;
+  &__box1{
+    padding: 1rem;
+  }
+  &__value1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &-input{
+      border-radius: 30px;
+      background-color: $color-five;
+      width: 77%;
+      border: 1px solid $color-one;
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 1rem;
+      &:focus{
+        border-radius: 30px;
+        outline: none;
+      }
+      @include display(tablet-medium-up){
+        width: 30%;
+      }
+    }
+  }
+  &__value2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &-input{
+      border-radius: 30px;
+      border: 1px solid $color-one;
+      background-color: $color-five;
+      width: 77%;
+      border: 1px solid $color-one;
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 1rem;
+      &:focus{
+        border-radius: 30px;
+        outline: none;
+      }
+      @include display(tablet-medium-up){
+        width: 30%;
+      }
+    }
+  }
+  &__instructions1{
+    display: flex;
+    @include display(tablet-medium-up){
+      justify-content: space-between;
+      padding: 2rem;
+      justify-content: center;
+    }
+    @include display(mobile){
+      flex-direction: column;
+    }
+  }
+  &__title{
+    color: $color-one;
+    font-weight: 700;
+  }
+  &__text{
+    font-size: 14;
+    font-weight: 400;
+    padding: 2rem;
+    @include display(small){
+      padding: 1rem;
+    }
+  }
+  &__letter{
+    color: $color-two;
+    font-weight: 900;
+  }
+}
+.auto-matrix{
+  display: flex;
+  justify-content: center;
+  &__col{
+    border-radius: 30px;
+    border: 1px solid $color-one;
+    width: 40px;
+    height: 20px;
+  }
+  &__input{
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    width: 40px;
+    &:focus{
+      border-radius: 30px;
+      outline: none;
+      text-align: center;
+    }
+  }
+}
+.box-data{
+  display: flex;
+  flex-direction: column;
+  &__player{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+  }
+  &__group-buttons{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button{
+    background-color: $color-one;
+    padding: .5rem;
+    width: 6rem;
+    visibility: hidden;
+    margin: 0 auto;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: rem(14);
+    font-weight: 900;
+    -webkit-box-shadow: 2px 8px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: 2px 8px 13px -6px rgba(0,0,0,0.75);
+    transition: all 1s ease;
+    @include display(tablet-medium-up){
+      width: 8rem;
+    }
+    @include display(mobile){
+      font-size: rem(12);
+      padding: .5rem;
+      width: 7rem;
+      margin-bottom: 2rem;
+    }
+    &:hover{
+      -webkit-box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      -moz-box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      box-shadow: 2px 8px 13px -6px rgba(18, 100, 207, 0.589);
+      background-color: white;
+      border: 1px solid $color-one;
+      color: $color-one;
+    }
+    &--reset{
+      visibility: hidden;
+      background-color: $color-two;
+      &:focus{
+        border-radius: 30px;
+        outline: none;
+      }
+    }
+    &--press-to-play{
+      visibility: hidden;
+      &:focus{
+        border-radius: 30px;
+        outline: none;
+      }
+    }
+    &--player-win{
+      visibility: hidden;
+      background-color: rgb(76, 194, 55);
+      transition: visibility .1s;
+      &:hover{
+      background-color: rgb(76, 194, 55);
+      border: none;
+      color: white;
+    }
+    }
+    &--player-lost{
+      visibility: hidden;
+      background-color: $color-three;
+      margin-top: -4.5rem;
+      width: 10rem;
+      transition: visibility .1s;
+    }
+    
+  }
+  &__title{
+    text-align: center;
+  }
+}
+.box-data__button--start{
+  visibility: visible;
+  &:focus{
+    border-radius: 30px;
+    outline: none;
+  }
+}
